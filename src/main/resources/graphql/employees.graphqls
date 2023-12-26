@@ -1,0 +1,19 @@
+scalar Long
+
+type Employees{
+    employeeId : ID!
+    employeeName :String!
+    employeeAge : Int!
+    employeeAddress : String!
+    employeeContact : Long!
+}
+
+type Mutation {
+    createEmployee(employeeName :String!,employeeAge : Int!,employeeAddress : String!,employeeContact : Long!):Employees!
+    deleteEmployee( employeeId : ID!):Boolean!
+    updateEmployee(employeeId : ID!employeeName :String!,employeeAge : Int!,employeeAddress : String!,employeeContact : Long!):Employees!
+}
+
+type  Query {
+    getAllEmployees:[Employees]!
+}
