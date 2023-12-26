@@ -1,0 +1,29 @@
+configuration 
+
+git config --global user.name "githubusername"
+git config --global user.email "githubemail"
+
+To see configuration 
+
+git config --global --list 
+
+
+commands                description
+git init                        -> to initialize a folder as git  master branch
+git init -b main                -> to initialize a folder as git main branch
+ls                              -> list all files 
+git status                      -> to see status of our local repository.
+git status --short              -> to see the changes compact way.
+git diff                        -> to see changes in the content of the file
+git add file_name               -> to add a file to staged state.
+git add --all or add -A         -> to add all files to staged state.
+git rm --catched file_name      -> to remove files from git repository
+git commit -m"message"          -> to move the files staged to commit state.
+git commit -a -m"message"       -> shorthand for add and commit.
+git log                         -> to see commits log. 
+git branch branch_name          -> to create new branch.
+git checkout destination_branch -> switch current branch to destination branch.
+git merge branch_name           -> to merge the branch.
+git branch -d branch_name       -> to delete the branch name.
+git remote add remote_url       -> to add remote repository url.
+
